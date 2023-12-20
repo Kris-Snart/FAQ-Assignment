@@ -1,0 +1,191 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+.bodyy{
+    position: relative;
+}
+
+.navigation {
+  min-width: 100vw;
+  height: 200px;
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+  background-color: aqua;
+  z-index: 1;
+}
+
+.main0-sec {
+  height: calc(100vh - 200px);
+  max-width:100vw;
+  background-color:  hsl(275, 100%, 97%)
+  ;
+  display: flex;
+  flex-direction: column;
+ flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main0-box {
+  height: 60%;
+  width: 550px;
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  border-radius: 15px;
+  box-shadow: 6px 10px 10px  rgba(51, 51, 51, 0.25);
+  padding: 1em;
+}
+
+.mid-boxes{
+margin: 0.8rem 0 5px  0;
+border-bottom: 1px solid rgb(218, 211, 211);
+height: 18%;
+width: 100%;
+padding: 5px 5px 6px 5px;
+}
+.mid-boxes2{
+  margin: 0.8rem 0 ;
+border-bottom: 1px solid rgb(218, 211, 211);
+height: 18%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px 5px 8px 5px;
+
+}
+.mid-boxes2 h3{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+#first h2{
+font-weight: 700;
+font-size: 30px;
+
+}
+#first{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 1.5em;
+
+
+}
+button{
+height:18px ;
+width:30px;
+border-radius: 50%;
+border: 0;
+background: 0;
+cursor: pointer;
+}
+button img{
+height:100% ;
+width:100%;
+}
+figure{
+    width: 40px;
+    height: 41px;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+button .minus-icon{
+display: none;
+}
+.answer{
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 200ms ease;
+}
+.answer p{
+color:hsl(292, 16%, 49%) ;
+padding: 1.5rem 0;
+}
+
+
+.answer.show {
+  max-height: 1000px; /* Adjust this value based on your content height */
+}
+.answer {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+}
+
+.answer.show {
+  max-height: 1000px; /* Adjust this value based on your content height */
+}
+
+.add-icon,
+.minus-icon {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+.main0-sec {
+        height: calc(100vh - 200px);
+        width:100vw;
+       
+        ;
+        display: flex;
+       flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(275, 100%, 97%);
+}
+.main0-box {
+        height: 65%;
+        width: 300px;
+        background-color: white;
+        z-index: 3;
+        position: absolute;
+        top: 100px;
+        border-radius: 15px;
+        box-shadow: 6px 10px 10px  rgba(51, 51, 51, 0.25);
+}
+.mid-boxes2{
+    border-bottom: 1px solid rgb(218, 211, 211);
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+    }
+
+    button{
+        height:20px ;
+        width:30px;
+        border-radius: 50%;
+        border: 0;
+        background: 0;
+        cursor: pointer;
+        }
+}
